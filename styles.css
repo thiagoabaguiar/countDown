@@ -1,0 +1,262 @@
+:root {
+    --light-grey: #C8C8C8;
+    --black: #263238;
+    --dark-medium: #455A64;
+    --yellow-dark: #FFC727;
+    --blue-dark: #140042;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: relative;
+    width: 1366px;
+    height: 696px;
+    background: var(--blue-dark);
+}
+
+#top_image {
+    position: absolute;
+    width: 1366px;
+    height: 133px;
+    left: 0px;
+    top: 0px;
+}
+
+#bottom_image {
+    position: absolute;
+    width: 1366px;
+    height: 229px;
+    left: 0px;
+    top: 467px;
+}
+
+#frame_right {
+    position: absolute;
+    width: 607px;
+    height: 435px;
+    left: 699px;
+    top: 80px;
+}
+
+#countdown_full {
+    position: absolute;
+    width: 494px;
+    height: 172px;
+    left: 123px;
+    top: 187px;
+}
+
+#phrase_main {
+    position: absolute;
+    width: 494px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    line-height: 54px;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: var(--yellow-dark);
+}
+
+#countdown_with_heads {
+    position: absolute;
+    width: 494px;
+    height: 21px;
+    top: 79px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#countdown_with_heads div:nth-child(1) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--yellow-dark);
+}
+
+#countdown_with_heads div:nth-child(2) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--yellow-dark);
+}
+
+#countdown_with_heads div:nth-child(3) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--yellow-dark);
+}
+
+#countdown_with_heads div:nth-child(4) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--yellow-dark);
+}
+
+#countdown {
+    position: absolute;
+    width: 494px;
+    height: 21px;
+    left: 0px;
+    top: 95px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    line-height: 108px;
+    color: #FFF
+}
+
+#phrase_subs {
+    position: absolute;
+    width: 349px;
+    height: 21px;
+    left: 196px;
+    top: 405px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-grey)
+}
+
+#button_subs {
+    position: absolute;
+    width: 160px;
+    height: 46px;
+    left: 290px;
+    top: 457px;
+    background: var(--yellow-dark);
+    border-radius: 10px;
+    z-index: 999;
+    transition: filter 0.2s;
+}
+
+#button_subs:hover{
+    filter: brightness(0.8)
+}
+
+#button_subs div {
+    position: absolute;
+    width: 96px;
+    height: 20px;
+    left: 30px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-medium);
+}
+
+.modal {
+    background-color: var(--light-grey);
+    padding: 2.4rem;    
+    width: 30%;
+    max-width: 700px;
+}
+
+.modal_overlay {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 999;
+}
+
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 90%;
+}
+
+.input_group {
+    margin-top: 0.8rem;
+}
+
+.input_group small {
+    opacity: 0.4;
+}
+
+form h3 {
+    color: var(--blue-dark)
+}
+
+#buttons_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+#button_close, #button_submit {
+    border-radius: 8px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_submit {
+    height: 50px;
+    width: 160px;
+    background-color: var(--yellow-dark);
+    color: var(--dark-medium);
+    transition: filter 0.2s;
+}
+
+#button_submit:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+#button_close {
+    font-size: 15px;
+    color: var(--black);
+    border: var(--blue-dark) solid 2px;
+    height: 20px;
+    width: 130px;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+#button_close:hover {
+    opacity: 0.7;
+}

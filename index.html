@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Lançamento...</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <img id="top_image" src="./images/top-image.svg" alt="">
+
+        <div id="phrase_subs">Inscreva-se para saber mais sobre o lançamento</div>
+
+        <button id="button_subs" onclick="Modal.open()"><div>Inscreva-se</div></button>
+                
+        <div id="frame_right"><img src="./images/rocket_yellow.svg" alt=""></div>
+
+        <div id="countdown_full">
+            <div id="phrase_main">LANÇAMENTO EM...</div>
+            <div id="countdown_with_heads">
+                <div>Dias</div>
+                <div>Horas</div>
+                <div>Minutos</div>
+                <div>Segundos</div>
+            </div>
+            <div id="countdown"></div>
+        </div>
+
+        <div class="modal_overlay">
+            <div class="modal">
+                <div>
+                    <form action="" onsubmit="Form.submit(event)">
+                        <h3>Deixe seus dados para ser notificado:</h3>
+                        <div class="input_group">
+                            <label
+                                class="sr_only"
+                                for="name">Nome</label>
+                            <input id="name"
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Nome..."
+                            />
+                        </div>
+    
+                        <div class="input_group">
+                            <label
+                                class="sr_only"
+                                for="email">email</label>
+                            <input id="email"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="E-mail..."
+                            />
+                        </div>
+
+                        <div id="buttons_box">
+                            <a id="button_close" href="#" onclick="Modal.close()">Fechar</a>
+                            <button id="button_submit" type="submit">Inscrever-me</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <img id="bottom_image" src="./images/bottom-image.svg" alt="">
+
+    </div>
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
